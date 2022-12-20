@@ -7,12 +7,16 @@ mkdir kb
 cd kb
 mkdir images
 ```
+## Usage
+
 Put images you want to recognize in kb/images.
 
 Your .scs file will be generated in kb folder.
 
-## Usage
+Run script:
 ```
 #Terminal
-python recognize.py kb/images/img_name
+python recognize.py kb/images/'img_name'
 ```
+
+Put kb folder into your OSTIS kb directory.
