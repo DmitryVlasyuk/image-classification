@@ -60,7 +60,7 @@ file_path='kb/{}.scs'.format(file_name)
 
 f = open(file_path, "w")
 
-txt="{}\n<- concept_image;\n<= nrel_includes: concept_{};\n<- rrel_key_sc_element: ...\n(*\n<-sc_illustration;;\n<=nrel_sc_text_translation: ...\n(*\n-> rrel_example: \"{}\" (*\n=> nrel_format: format_{};;\n *);;\n*);;\n*);\n<- sc_node_not_relation;;".format(file_name,class_names[np.argmax(score)],img_path,file_extension)
+txt="{}\n<- concept_image;\n<= nrel_includes: concept_{};\n<- rrel_key_sc_element: ...\n(*\n<-sc_illustration;;\n<=nrel_sc_text_translation: ...\n(*\n-> rrel_example: \"file://images/{}.{}\" (*\n=> nrel_format: format_{};;\n *);;\n*);;\n*);\n<- sc_node_not_relation;;".format(file_name,class_names[np.argmax(score)],file_name,file_extension,file_extension)
 
 
 # In[8]:
